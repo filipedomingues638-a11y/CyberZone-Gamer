@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #111; 
+    background: url('imagens/fundo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background-color: transparent;
+    padding: 20px;
+}
+
+header h1 {
+    color: red;
+    text-shadow:
+        -2px -2px 0 black,
+         2px -2px 0 black,
+        -2px  2px 0 black,
+         2px  2px 0 black;
+    font-weight: bold;
+    font-family: 'Arial Black', sans-serif;
+}
+
+nav a {
+    color: red;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.product {
+    background-color: #333;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product p {
+    color: #ccc;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: none;
+}
+
+.contact-form {
+    background-color: #333;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #555;
+    border: none;
+    color: white;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #00ffcc;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #00b39d;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #222;
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .video-container iframe {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .product {
+        width: 90%;
+    }
+
+    .video-container iframe {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+.footer-social {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #00ffcc;
+}
+
+.footer-social a {
+    color: #ff5050;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-social a:hover {
+    text-decoration: underline;
+}

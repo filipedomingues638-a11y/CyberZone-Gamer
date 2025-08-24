@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberZone Gamer - Sua Loja Gamer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🔥 Bem-vindo à CyberZone Gamer 🔥</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="https://wa.me/5511988015596?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20um%20produto!">Fale Conosco (WhatsApp)</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h2>🎮 Os melhores produtos gamers para você! 🎮</h2>
+    </section>
+
+    <section class="product-list">
+        <div class="product">
+            <img src="imagens/mouse-gamer.jpg" alt="Mouse Gamer RGB">
+            <h2>Mouse Gamer RGB</h2>
+            <p>Mouse ergonômico com iluminação RGB e sensor de alta precisão.</p>
+            <p><strong>R$ 149,90</strong></p>
+        </div>
+
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/o59r4Z71fxQ?autoplay=1&mute=1&loop=1&playlist=o59r4Z71fxQ" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="product">
+            <img src="imagens/teclado-gamer.jpg" alt="Teclado Mecânico RGB">
+            <h2>Teclado Mecânico RGB</h2>
+            <p>Teclado mecânico de alta performance com switches resistentes.</p>
+            <p><strong>R$ 299,90</strong></p>
+        </div>
+    </section>
+
+    <script>
+        const nomeLoja = "CyberZone Gamer";
+        const anoAtual = new Date().getFullYear();
+        const oferta = "🎮 Bem-vindo à " + nomeLoja + "! Aproveite nossas ofertas em " + anoAtual + "! 🕹️";
+        document.write("<div style='margin-top:20px; font-size:18px; color: #00ffcc; font-weight: bold;'>" + oferta + "</div>");
+    </script>
+
+    <footer>
+        <p>CyberZone Gamer © 2025 - Todos os direitos reservados.</p>
+
+        <div class="footer-social">
+            <p>Desenvolvido por Filipe Domingues</p>
+            <p>Siga-nos nas redes sociais:</p>
+            <a href="https://www.instagram.com/cyberzonegaming_/" target="_blank">Instagram: @cyberzonegaming_</a> |
+            <a href="https://youtube.com/cyberzonegaming_" target="_blank">YouTube: cyberzonegaming_</a> |
+            <a href="https://www.facebook.com/cyberzonegaming_">Facebook: @cyberzonegaming_</a> |
+            <a href="https://www.google.com/maps/place/Papua-Nova+Guiné/@-6.3382821,145.1037639,2003362m/data=!3m2!1e3!4b1!4m15!1m8!3m7!1s0x685a6c6ff8431125:0xb43c35fbcbc8ff9f!2sDimifa+Terras+Altas+do+Sul,+Papua-Nova+Guiné!3b1!8m2!3d-6.084496!4d143.682602!16s%2Fg%2F1v8k_r1b!3m5!1s0x6859e8afbf0e9eaf:0xdaf0e50d8e9c127a!8m2!3d-6.314993!4d143.95555!16zL20vMDVxa3A?entry=ttu&g_ep=EgoyMDI1MDQyMi4wIKXMDSoASAFQAw%3D%3D">Localização: São Paulo - SP📍</a>
+        </div>
+    </footer>
+
+</body>
+<script>
+    window.onload = function() {
+        const nome = "Filipe Domingues";
+        const curso = "SP/ADS-MACK";
+
+        const hoje = new Date();
+        const hora = hoje.getHours();
+
+        let saudacao;
+        if (hora >= 6 && hora < 12) {
+            saudacao = "Bom dia!";
+        } else if (hora >= 12 && hora < 18) {
+            saudacao = "Boa tarde!";
+        } else {
+            saudacao = "Boa noite!";
+        }
+
+        const dias = ["domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado"];
+        const diaSemana = dias[hoje.getDay()];
+
+        const mensagem = `${nome}\n${curso}\n${saudacao} Hoje é ${diaSemana}`;
+        alert(mensagem);
+    };
+</script>
+
+</html>
