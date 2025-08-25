@@ -7,7 +7,7 @@
 
 body {
     background: #111; 
-    background: url('imagens/fundo.jpg') no-repeat center center fixed;
+    background: url('fundo.jpg') no-repeat center center fixed;
     background-size: cover;
     color: white;
     text-align: center;
@@ -166,3 +166,4 @@ footer {
 .footer-social a:hover {
     text-decoration: underline;
 }
+
