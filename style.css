@@ -7,7 +7,7 @@
 
 body {
     background: #111; 
-    background: url('https://raw.githubusercontent.com/filipedomingues638-a1ly/CyberZone-Gamer/main/fundo.jpg') no-repeat center center fixed;
+    background: url('./fundo.jpg') no-repeat center center fixed;
     background-size: cover;
     color: white;
     text-align: center;
@@ -166,5 +166,6 @@ footer {
 .footer-social a:hover {
     text-decoration: underline;
 }
+
 
 
